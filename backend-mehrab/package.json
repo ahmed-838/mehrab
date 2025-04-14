@@ -4,7 +4,10 @@
   "description": "خادم غرف الصوت لتطبيق محراب",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node scripts/seedRooms.js"
   },
   "keywords": [
     "voice",
@@ -26,6 +29,7 @@
     "nodemon": "^3.1.9",
     "Router": "^2.1.0",
     "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
     "winston": "^3.17.0",
     "wrtc": "^0.4.7"
   }

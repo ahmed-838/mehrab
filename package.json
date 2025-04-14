@@ -1,0 +1,15 @@
+{
+  "name": "mehrab",
+  "version": "1.0.0",
+  "description": "تطبيق لإدارة حلقات تحفيظ القرآن الكريم",
+  "scripts": {
+    "install-all": "cd backend-mehrab && npm install && cd ../frontend-mehrab && npm install",
+    "start-backend": "cd backend-mehrab && npm run dev",
+    "start-frontend": "cd frontend-mehrab && npm run dev",
+    "seed": "cd backend-mehrab && npm run seed",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
